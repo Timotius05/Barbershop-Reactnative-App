@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
     fontSize: 37,
     fontFamily: 'Lobster 1.4',
     textAlign: 'center',
-    marginTop : 10
+    marginTop : 10,
+    marginBottom: 20
   }
 });

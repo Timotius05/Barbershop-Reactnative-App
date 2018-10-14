@@ -6,7 +6,7 @@ import {
     View,
     Button,
     KeyboardAvoidingView,
-    Image
+    image
 } from 'react-native';
 import {
     
@@ -20,10 +20,8 @@ export default class Login extends Component {
 
             <View style={styles.container}>
                 <Image style={styles.gambar}
-                source = {require('./logo.png')}/>
+                source = {require('./konten/logo.png')}/>
                 </View>
-
-                <Text style={styles.tulisan}> Gentleman Cut</Text>
 
             <View style={{padding: 45}}>
                 <TextInput style={styles.input}
@@ -32,8 +30,8 @@ export default class Login extends Component {
                 placeholder='Password' secureTextEntry={true} underlineColorAndroid='transparent'/>
                 <View style={{margin:10}} />
 
-            <View style={{width: 282,marginBottom:80}}>
-               <Button onPress={() => this.props.navigation.navigate('HomeScreen')} title="LOG IN" color="#F6921E" />
+            <View style={{width: 282}}>
+               <Button title="LOG IN" color="#F6921E" />
                
                   </View>
                   </View>
@@ -51,8 +49,7 @@ const styles = StyleSheet.create({
         height: 40,
         width: 280,
         backgroundColor: 'white',
-        marginBottom: 10,
-        marginTop: -5,
+        marginBottom: 20,
         color: 'black',
         borderRadius:2,
         color: '#162344',
@@ -68,23 +65,15 @@ const styles = StyleSheet.create({
         borderRadius:2,
         color: '#162344',
         fontSize: 13,
-        marginBottom:10,
         fontFamily: 'Roboto-Regular'
         },
 
         gambar:{
-    
+            alignItems: 'center',
+            justifyContent: 'center',
             width : 150,
             height : 150,
-            marginTop : 40,
-            marginLeft: 110
-        },
-
-        tulisan:{
-          color: 'white',
-          fontSize: 37,
-          fontFamily: 'Lobster 1.4',
-          textAlign: 'center',
+            marginTop : 35
         }
     }
     
